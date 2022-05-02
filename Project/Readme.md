@@ -24,6 +24,8 @@ Schematic: pi-and-adxl345_bb
 Setup:
 
 ADXL345
+![image](https://user-images.githubusercontent.com/98520600/166179922-ea895bad-56ae-4768-bc76-d3460515daf6.png)
+
 
 adxl
 
