@@ -18,6 +18,8 @@ The following project implements a driver communicating with the ADXL345 over th
 
 Setup and the schematic.
 Schematic: pi-and-adxl345_bb
+![image](https://user-images.githubusercontent.com/98520600/166179884-fafc8444-4a27-451a-9d88-07b97b117643.png)
+
 
 Setup:
 
