@@ -43,9 +43,22 @@ Setting the range to be +/-2g, +/-4g, +/-8g and +/- 16g.
 Interpreting the data
 The data given out by the sensor is in 2's compliment form. If the range is +/- 2g and resolution is 10 bit, then LSB will represent 4g/1024 (mulitpying factor) as an absolute value. Bringing the 2's compliment data back into decimal form and multiplying it by the factor will give us the value in Gs. The multiplying factor will change depending upon the range and the resolution.
 
+
 Steps
 Navigate to the directory conatining the driver and associated Makefile.
-Execute the make command.
-Insert the module -> sudo insmod adxl.ko
-Grant the permission for the dev file
-Execute the user file -> ./user_file
+
+1.make
+
+2.sudo modprobe  industrialio
+
+3.sudo insmod adxl.ko
+
+4.cd sys/bus/iio/devices/
+
+5.cd  iio\:device0
+
+6.cat in_accel_x_raw
+
+7.cat in_accel_y_raw
+
+8.cat in_accel_z_raw
