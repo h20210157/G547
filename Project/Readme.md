@@ -47,5 +47,5 @@ Steps
 Navigate to the directory conatining the driver and associated Makefile.
 Execute the make command.
 Insert the module -> sudo insmod adxl.ko
-Grant the permission for the dev file -> sudo chmod 777 /dev/adxl_file
+Grant the permission for the dev file
 Execute the user file -> ./user_file
