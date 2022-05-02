@@ -13,10 +13,14 @@ Vnc viewer
 
 Summary
 
-The following project implements a driver communicating with the ADXL345 over the I2C protocol, reads its data register, and returns its raw values to the user through a number of IOCTL calls implemented. Driver also facilitates the configuration of the range of the sensor reading using RANGE_SENSOR ioctl call. The host used is the Raspberry Pi 3b+ model.
+The following project implements a driver communicating with the ADXL345 over the I2C protocol, reads its data register.  Driver also facilitates the configuration of the range of the sensor reading using RANGE_SENSOR. The host used is the Raspberry Pi 3b+ model.
 
 
-Setup and the schematic.
+
+
+Setup and the schematic.![aa](https://user-images.githubusercontent.com/98520600/166180337-eca865e0-9ad7-4857-9539-25c35223926f.jpg)
+
+
 Schematic: pi-and-adxl345_bb
 ![image](https://user-images.githubusercontent.com/98520600/166179884-fafc8444-4a27-451a-9d88-07b97b117643.png)
 
