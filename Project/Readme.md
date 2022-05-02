@@ -39,3 +39,13 @@ The driver implemented has ioctl call for
 Turning on the device
 Reading individual axis data.
 Setting the range to be +/-2g, +/-4g, +/-8g and +/- 16g.
+
+Interpreting the data
+The data given out by the sensor is in 2's compliment form. If the range is +/- 2g and resolution is 10 bit, then LSB will represent 4g/1024 (mulitpying factor) as an absolute value. Bringing the 2's compliment data back into decimal form and multiplying it by the factor will give us the value in Gs. The multiplying factor will change depending upon the range and the resolution.
+
+Steps
+Navigate to the directory conatining the driver and associated Makefile.
+Execute the make command.
+Insert the module -> sudo insmod adxl.ko
+Grant the permission for the dev file -> sudo chmod 777 /dev/adxl_file
+Execute the user file -> ./user_file
