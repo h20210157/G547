@@ -13,7 +13,7 @@ Vnc viewer
 
 Summary
 
-The following project implements a driver communicating with the ADXL345 over the I2C protocol, reads its data register.  Driver also facilitates the configuration of the range of the sensor reading using RANGE_SENSOR. The host used is the Raspberry Pi 3b+ model.
+Using IIO subsystems, I2C interfacing of ADXL345 is done. At probe function, memory allocation for IIO device is done and IIO device registration is done. At remove function, IIO device is unregistered and memory is freed. ADXL345 has 3 channels ie x,y,z axis data. The axis data is read from the register addresses 0x32, 0x34, 0x36 using read raw function. Register addresses are available in ADXL345 datasheet. The host used is the Raspberry Pi 3b+ model.
 
 
 
